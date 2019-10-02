@@ -51,6 +51,7 @@
 					$footer = $('#footer'),
 					$wrapper = $('#wrapper'),
 					$nav = $('#nav'), $nav_links = $nav.find('a'),
+					// $story = $('#story'), $story_links = $story.find('a');
 					$jumplinks = $('.jumplink'),
 					$form = $('form'),
 					panels = [],
@@ -64,6 +65,7 @@
 					settings.fadeSpeed = 0;
 					settings.resizeSpeed = 0;
 					$nav_links.find('span').remove();
+					// $story_links.find('span').remove();
 
 				}
 
@@ -110,6 +112,9 @@
 							// Change nav link (if it exists).
 								$nav_links.removeClass('active');
 								$nav_links.filter('[href="#' + id + '"]').addClass('active');
+							// Change story link (if it exists).
+								// $story_links.remove('active');
+								// $story_links.filter('[href="#' + id + '"]').addClass('active');
 
 							// Change hash.
 								if (i == 0)
